@@ -1,0 +1,43 @@
+[22,27,16,2,18,6]
+Başlangıç sayısı referans noktası olarak alınır. 
+[22,27,16,2,18,6] : 22<27 için değişiklik olmaz.
+[22,27,16,2,18,6] : 27>16 için 27, sağa geçer.
+[22,16,27,2,18,6] : 22>16 için 16 sola geçer.
+[16,22,27,2,18,6] : 27>2 için 2 sola geçer.
+[16,22,2,27,18,6] : 22>2 için 2 sola geçer.
+[16,2,22,27,18,6] : 16>2 için 2 sola geçer.
+[2,16,22,27,18,6] : 27>18 için 27 sağa geçer.
+[2,16,22,18,27,6] : 22>18 için 22 sağa geçer.
+[2,16,18,22,27,6] : 27>6 için 27 sağa geçer.
+[2,16,18,22,6,27] : 22>6 için 22 sağa geçer.
+[2,16,18,6,22,27] : 18>6 için 6 sola geçer.
+[2,16,6,18,22,27] : 16>6 için 6 sola geçer.
+[2,6,16,18,22,27] : 2<6 için değişiklik olmaz.
+
+En küçük sayıyı en başa getirmek için n sayıda işlem yaparız. İkinci sayıyı getirmek için n-1, üçüncü sayıyı getirmek için n-2..
+
+Toplam işlem sayısı n*(n+1)/2 = (n²+n)/2
+
+BigO gösterimi O(n²) dir.
+
+Dizi sıralandıktan sonra 18 tam ortda yer aldığı için Average Case olur.
+
+Selection Sort 
+[7,3,5,8,2,9,4,15,6] 
+Listenin başındaki sayı referans olarak alınır.Kendisinden küçük sayıyı bulana kadar aramaya devam eder.
+7>3 için 3 başa gelir. 
+[3,7,5,8,2,9,4,15,6]
+3 en baştaki sayı aramaya devam eder. 
+3>7? 3>5? 3>8? 3>2? de durur. 3>2 olduğu için 2 başa gelir. 3 ile 2 yer değiştirir. 
+[2,7,5,8,3,9,4,15,6] 
+Artık daha küçük bir eleman olmadığı için ikinci elemana geçilir.
+ 7>5 için yer değiştirilir. 
+[2,5,7,8,3,9,4,15,6]
+5>7? 5>8? 5>3? de durur. 5>3 önermesi doğru olduğu için 3 ile yer değiştirir. 
+[2,3,7,8,5,9,4,15,6]
+Üçüncü eleman için arama başlar. 
+7>8? 7>5? de durur. 7>5 önermesi doğru olduğu için yer değiştirilir.
+[2,3,5,8,7,9,4,15,6]
+5>8? 5>7? 5>9? 5>4? de durur. 5>4 önermesi doğru olduğu için yer değiştirilir.
+[2,3,4,8,7,9,5,15,6]
+
