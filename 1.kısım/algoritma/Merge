@@ -1,0 +1,23 @@
+Merge Sort
+[16,21,11,8,12,22]  
+Diziyi ortadaki değerden iki parçaya böler.
+
+Sol [16,21,11]
+
+[16]-[21,11] 11<21 için 11 sola hizalanır.
+[16]-[11,21] 11<16 için 11 sola hizalanır.
+
+[11,16,21] ilk parça.
+
+Sağ [8,12,22]
+
+[8]-[12,22] 12<22 için 12 sola hizalanır.
+[8]-[12,22] 8<12 için 8 sola hizalanır.
+
+Birleştirme
+
+[11,16,21] - [8,12,22]
+
+[8,11,12,16,21,22]  
+
+O(nlogn)
