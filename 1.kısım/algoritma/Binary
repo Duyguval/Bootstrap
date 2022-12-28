@@ -1,0 +1,30 @@
+Binary Search Tree
+[7, 5, 1, 8, 3, 6, 0, 9, 4, 2]
+Root : 6
+3<6 için sola hizalanır.
+    3<8 için sola hizalanır.
+    3>1 için sağa hizalanır.-S
+0<6 için sola hizalanır.
+    0<3 için sola hizalanır.
+    0<1 için sola hizalanır.-S
+8>6 için sağa hizalanır.
+    8<9 için sola hizalanır.-S
+9>6 için sağa hizalanır.
+    9>8 için sağa hizalanır.-S
+1<6 için sola hizalanır.
+    1<3 için sola hizalanır.
+    1>0 için sağa hizalanır.-S
+4<6 için sola hizalanır.
+    4>3 için sağa hizalanır.-S
+5<6 için sola hizalanır.
+    5>4 için sağa hizalanır.-S
+7>6 için sağa hizalanır.
+    7<8 için sola hizalanır. -S
+2<6 için sola hizalanır.
+    2<4 için sola hizalanır.
+    2<3 için sola hizalanır.
+    2>1 için sağa hizalanır.
+
+0-1-2-3-4-5-(6)-7-8-9
+
+
